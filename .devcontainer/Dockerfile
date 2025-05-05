@@ -19,8 +19,12 @@ SHELL ["/bin/zsh", "-c"]
 # set the xiong-chiamiov-plus theme
 RUN sed -i 's/ZSH_THEME="robbyrussell"/ZSH_THEME="xiong-chiamiov-plus"/' ~/.zshrc
 
-# export CHROME_BIN to use the Chrome installed in the container
-ENV CHROME_BIN=http://chrome:9222
+# Install Selenium dependencies
+RUN sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list' \
+    && wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | apt-key add - \
+    && apt-get update
+
+RUN apt-get install -y google-chrome-stable
 
 # Set the working directory
 WORKDIR /workspace

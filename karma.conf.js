@@ -33,8 +33,7 @@ module.exports = function (config) {
         flags: [
           '--no-sandbox',
           '--disable-gpu',
-          '--remote-debugging-address=chrome',
-          '--remote-debugging-port=9222'
+          '--headless'
         ]
       }
     },
