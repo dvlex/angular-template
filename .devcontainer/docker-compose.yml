@@ -6,3 +6,20 @@ services:
     volumes:
       - ..:/workspace:cached
     command: "/bin/sh -c 'while :; do sleep 10; done'"
+  chrome:
+    image: icalialabs/chromium:93.0.4577.82
+    ports:
+      - published: ${CHROME_WEB_PORT:-9222}
+        target: 9222
+    # Mount application source code to support file uploading
+    # (otherwise Chrome won't be able to find files).
+    # NOTE: Make sure you use absolute paths in `#attach_file`.
+    volumes:
+      - type: bind
+        source: .
+        target: /workspace
+    environment:
+      PORT: 9222
+      # Set connection timeout to avoid timeout exception during debugging
+      # https://docs.browserless.io/docs/docker.html#connection-timeout
+      CONNECTION_TIMEOUT: 600000

@@ -2,6 +2,9 @@
     "name": "React Dev Container",
     "dockerComposeFile": "docker-compose.yml",
     "service": "angular",
+    "runServices": [
+        "chrome"
+    ],
     "forwardPorts": [4200],
     "workspaceFolder": "/workspace",
     "customizations": {
