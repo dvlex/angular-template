@@ -19,6 +19,8 @@ SHELL ["/bin/zsh", "-c"]
 # set the xiong-chiamiov-plus theme
 RUN sed -i 's/ZSH_THEME="robbyrussell"/ZSH_THEME="xiong-chiamiov-plus"/' ~/.zshrc
 
+# export CHROME_BIN to use the Chrome installed in the container
+ENV CHROME_BIN=http://chrome:9222
 
 # Set the working directory
 WORKDIR /workspace
