@@ -1,6 +1,39 @@
-# Template
+# Angular Template
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.10.
+This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.10 and is configured to be used inside a development container. For more information about development containers, refer to the [VS Code Dev Containers documentation](https://code.visualstudio.com/docs/devcontainers/containers).
+
+Please note that this project does not use Angular's standalone components feature. Instead, it follows the traditional NgModule-based architecture for organizing components, directives, and services.
+
+## Prerequisites
+
+Before getting started, ensure you have the following installed:
+
+- [Visual Studio Code](https://code.visualstudio.com/)
+- [Dev Containers extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) for Visual Studio Code
+- [Docker](https://www.docker.com/)
+- [Windows Subsystem for Linux (WSL)](https://learn.microsoft.com/en-us/windows/wsl/) (if you are using Windows)
+
+## Setting Up the Development Container
+
+Working inside a development container provides a consistent and isolated environment for your project, ensuring that all dependencies and tools are configured correctly. This approach eliminates the "it works on my machine" problem and simplifies collaboration across teams.
+
+To open this project in a development container:
+
+1. Ensure the Docker daemon is running on your system.
+2. Open this project in Visual Studio Code.
+3. Press `Ctrl + Shift + P` (or `Cmd + Shift + P` on macOS) to open the Command Palette.
+4. Type and select **Reopen in Container**.
+
+Visual Studio Code will create a Docker container instance based on the project's configuration and attach to it. This allows you to work directly inside the containerized environment.
+
+### Advantages of Using a Dev Container
+
+- **Consistency**: All team members work in the same environment, reducing setup issues and configuration drift.
+- **Isolation**: Dependencies and tools are encapsulated within the container, avoiding conflicts with your local system.
+- **Portability**: The container configuration can be shared, making it easy to onboard new developers or replicate the environment on different machines.
+- **Simplified Tooling**: No need to install project-specific tools or dependencies on your local machine; everything is managed within the container.
+
+By leveraging development containers, you can streamline your workflow and focus on building your application without worrying about environment-related issues.
 
 ## Development server
 
