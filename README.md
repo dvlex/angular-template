@@ -56,8 +56,56 @@ Here are some planned enhancements for this template:
 - **CI/CD Docker Image Deployment**: Configure pipelines to build and push Docker images to a container registry for deployment.
 - **Authentication for Artifact Registry/DockerHub**: Add secure authentication mechanisms for pushing images to Artifact Registry or DockerHub.
 - **CI/CD for Deployment Using GitHub Actions**: Set up GitHub Actions workflows to automate the deployment process.
+- **Add vscode extensions volume in Dockerfile**: Configure the Dockerfile to include a volume for Visual Studio Code extensions. This ensures that extensions installed within the container persist across sessions, improving developer productivity and maintaining a consistent development environment.
 
 These features aim to improve the development workflow, enhance automation, and streamline deployment processes.
+
+## Collaborate and Report Issues
+
+We welcome contributions and feedback to improve this project! Here's how you can get involved:
+
+### Forking the Repository
+
+1. Navigate to the [repository on GitHub](https://github.com/your-repo-link).
+2. Click the **Fork** button in the top-right corner to create your own copy of the repository.
+3. Clone your forked repository to your local machine:
+
+  ```bash
+  git clone https://github.com/your-username/angular-template.git
+  cd angular-template
+  ```
+
+4. Create a new branch for your changes:
+
+  ```bash
+  git checkout -b feature/your-feature-name
+  ```
+
+5. Make your changes and commit them:
+
+  ```bash
+  git add .
+  git commit -m "Add a brief description of your changes"
+  ```
+
+6. Push your changes to your forked repository:
+
+  ```bash
+  git push origin feature/your-feature-name
+  ```
+
+7. Open a pull request from your branch to the main repository.
+
+### Reporting Issues
+
+If you encounter any bugs, have feature requests, or need assistance, please open an issue:
+
+1. Go to the [Issues tab](https://github.com/dvlex/angular-template/issues) in the repository.
+2. Click **New Issue**.
+3. Provide a clear and descriptive title.
+4. Fill out the issue template with details about the problem or suggestion, including steps to reproduce (if applicable).
+
+Your contributions and feedback are greatly appreciated!
 
 
 ## Development server
