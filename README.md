@@ -23,6 +23,13 @@ To open this project in a development container:
 2. Open this project in Visual Studio Code.
 3. Press `Ctrl + Shift + P` (or `Cmd + Shift + P` on macOS) to open the Command Palette.
 4. Type and select **Reopen in Container**.
+5. Once the development container setup process is complete, open a terminal within Visual Studio Code and run the following command to install all project dependencies:
+
+  ```bash
+  npm install
+  ```
+
+  This ensures that all required packages are installed and the project is ready for development.
 
 Visual Studio Code will create a Docker container instance based on the project's configuration and attach to it. This allows you to work directly inside the containerized environment.
 
