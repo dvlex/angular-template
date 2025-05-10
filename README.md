@@ -35,6 +35,31 @@ Visual Studio Code will create a Docker container instance based on the project'
 
 By leveraging development containers, you can streamline your workflow and focus on building your application without worrying about environment-related issues.
 
+## In this Container
+
+This development container is pre-configured with all the tools and dependencies you need to work with Angular locally. Here's what it includes:
+
+- **Node.js and npm**: For managing packages and running scripts.
+- **Angular CLI (`ng`)**: To create, build, and serve Angular applications.
+- **Karma**: For running unit tests.
+- **Chrome Headless**: For executing tests in a headless browser environment.
+- **Required Extensions**: Pre-installed Visual Studio Code extensions tailored for Angular development, such as Angular Language Service and ESLint.
+
+With this setup, you can start developing your Angular application immediately without worrying about installing or configuring additional tools.
+
+## Future Features in This Template
+
+Here are some planned enhancements for this template:
+
+- **Multi-Stage Dockerfile**: Refactor the Dockerfile to include stages for local development, testing, and production builds.
+- **CI/CD Testing**: Implement continuous integration and continuous delivery pipelines to automate testing processes.
+- **CI/CD Docker Image Deployment**: Configure pipelines to build and push Docker images to a container registry for deployment.
+- **Authentication for Artifact Registry/DockerHub**: Add secure authentication mechanisms for pushing images to Artifact Registry or DockerHub.
+- **CI/CD for Deployment Using GitHub Actions**: Set up GitHub Actions workflows to automate the deployment process.
+
+These features aim to improve the development workflow, enhance automation, and streamline deployment processes.
+
+
 ## Development server
 
 To start a local development server, run:
